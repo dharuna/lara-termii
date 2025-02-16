@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.1",
         "illuminate/support": "~10|~11",
         "ext-json": "*"
     },
@@ -48,5 +48,8 @@
                 "LaraTermii": "Dharuna\\LaraTermii\\LaraTermiiFacade"
             }
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
+
