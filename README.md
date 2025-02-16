@@ -73,7 +73,7 @@ composer require dharuna/lara-termii
 
 ### Security
 
-If you discover any security related issues, please email adamsohiani@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email danladiharuna@gmail.com instead of using the issue tracker.
 
 ## Credits
 
