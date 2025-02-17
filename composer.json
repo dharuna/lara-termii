@@ -1,11 +1,13 @@
 {
     "name": "dharuna/lara-termii",
     "description": "A Laravel Package for Termii - https://www.termii.com",
-	  "version": "1.0.0",
-  
+    "version": "1.0.0",
     "keywords": [
         "dharuna",
-        "lara-termii"
+        "lara-termii",
+        "laravel",
+        "termii",
+        "sms"
     ],
     "homepage": "https://github.com/dharuna/lara-termii",
     "license": "MIT",
@@ -19,7 +21,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "illuminate/support": "~10|~11",
+        "illuminate/support": "^10.0|^11.0",
         "ext-json": "*"
     },
     "require-dev": {
@@ -28,18 +30,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Dharuna\\LaraTermii\\": "src"
+            "Dharuna\\LaraTermii\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dharuna\\LaraTermii\\Tests\\": "tests"
+            "Dharuna\\LaraTermii\\Tests\\": "tests/"
         }
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "extra": {
         "laravel": {
@@ -47,12 +48,10 @@
                 "Dharuna\\LaraTermii\\LaraTermiiServiceProvider"
             ],
             "aliases": {
-                "LaraTermii": "Dharuna\\LaraTermii\\LaraTermiiFacade"
+                "LaraTermii": "Dharuna\\LaraTermii\\Facades\\LaraTermii"
             }
         }
     },
-   "minimum-stability": "stable",
-"prefer-stable": true
-
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
-
