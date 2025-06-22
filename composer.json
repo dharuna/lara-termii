@@ -1,7 +1,7 @@
 {
     "name": "dharuna/lara-termii",
     "description": "A Laravel Package for Termii - https://www.termii.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "keywords": [
         "dharuna",
         "lara-termii",
@@ -20,8 +20,12 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.0 || ^11.0 || ^12.0"
+        "php": "^8.1|^8.2|^8.3",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0"
     },
     "autoload": {
         "psr-4": {
@@ -31,6 +35,16 @@
     "autoload-dev": {
         "psr-4": {
             "Dharuna\\LaraTermii\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     },
     "extra": {
